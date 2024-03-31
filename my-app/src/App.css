@@ -1,5 +1,3 @@
-/* Add styling for your page here */
-
 .App {
   width: 100%;
   padding: 20px;
@@ -38,30 +36,43 @@
 }
 
 .dropdown:hover {
-  background-color: lightblue;
+  background-color:#C0c5c5;
 }
 
 .cart{
   display:flex;
   flex-direction: column;
-  align-items: center;
   justify-items: center;
-  margin-left: 20px;
+  margin-left: 40px;
+  padding-left: 40px;
   width: auto;
-  
+  margin-top: 0px;
+  border-style: none none none solid;
+  border-left: solid 1px grey;
 
 
 }
 
-.cart h2{
-  padding: 0px;
-  margin: 0px;
-  
-
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; 
+  margin-top: 10px;
 }
+
+.genre-bubble {
+  padding: 5px 10px;
+  background-color: #F6d4e3; 
+  border-radius: 10px; 
+  font-size: 12px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .card {
   /* background-color: blanchedalmond; */
+  position: relative;
   border-radius: 30px;
   padding: 20px;
   width: auto;
@@ -72,10 +83,46 @@
   
 }
 
-.button-div{
-  justify-content: flex-end;
-  justify-self: flex-end;
+.like-button{
+  position: absolute;
+  top: 10px; 
+  right: 12px; 
+  width: 30px;
+  height: 30px;
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+  background-color:pink;
+  padding: 0px;
+  box-shadow: 3px 3px 3px lightgray;
 
+}
+
+.like-button:hover{
+  cursor: pointer;
+  background-color: palevioletred;
+}
+
+.button-div{
+  justify-self: flex-end;
+  align-self: flex-end;
+
+}
+
+.remove-button{
+  padding: 6px 14px;
+  border: 1.5px solid lightgray;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.remove-button:hover{
+  cursor: pointer;
+  background-color: #C0c5c5;
+}
+
+li{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 h3{
@@ -105,21 +152,7 @@ p{
   
 }
 
-.button{
-  margin-bottom: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: black;
-  border: 1px grey;
-  background-color: lightblue;
-}
-
-
 .desc{
-  /* margin-left: 10px;
-  margin-right: 10px; */
   margin: 2px;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
@@ -133,4 +166,17 @@ p{
   width: 100%;
   height: auto;
   
+}
+
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: left;
+}
+
+.title-div{
+  display: flex;
+  align-content: flex-start;
+  margin-left: 20px;
 }

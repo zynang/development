@@ -7,7 +7,12 @@ export default function Movie(props) {
             <h4 className="desc">{props.description}</h4>
             <p>Year: {props.year}</p>
             <p>Rating: {props.rating}</p>
-            <p>Genre: {props.genre}</p>
+            {/* <p>Genre: {props.genre}</p> */}
+            <div className="genres">
+                {props.genre.split(', ').map((genre, index) => (
+                    <span key={index} className="genre-bubble">{genre}</span>
+                ))}
+            </div>
             <div className="button-div">
             <button className="like-button" onClick={() => props.toggleLike(props.name)}>{props.isLiked ? '❤️' : '🤍'}</button>
             </div>

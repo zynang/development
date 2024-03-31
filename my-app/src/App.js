@@ -11,17 +11,16 @@ movieData.forEach((item) => {
 /* ############################################################## */
 
 function App() {
-  // TODO: use useState to create a state variable to hold the state of the cart
-  /* add your cart state code here */
 
+  {/**set states */}
   const [cart, setCart] = useState([]);
   const [filterYear, setFilterYear] = useState('All');
   const [filterRating, setFilterRating] = useState('All');
   const [filterGenre, setFilterGenre] = useState('All Genres');
-  const [sortRating, setSortRating] = useState(false); // false means no sorting, true means sorted by rating
+  const [sortRating, setSortRating] = useState(false); 
 
 
-
+  {/**add liked movies to cart */}
   const toggleLike = (movieName) => {
     setCart((currentCart) => {
       if (currentCart.includes(movieName)) {
@@ -32,14 +31,21 @@ function App() {
     });
   };
 
+  {/** empty all from cart */}
+  const emptyCart = () => {
+    setCart([]);
+  }
 
+
+  {/**function to get genres from json, allows agile updates of genres available*/}
   const getUniqueGenres = (movies) => {
     const allGenres = movies.flatMap((movie) => movie.genre.split(', '));
     return ['All Genres', ...new Set(allGenres)];
   };
 
-  const appName= "ur fav movies"
+  const appName= "a simple home for your favourite movies!"
 
+  {/**filters movie by all possible filters, allows simulataneous usage of diff filters */}
   const filteredMovies = movieData.filter((movie) => {
     const matchesYear = filterYear === 'All' || movie.year.toString() === filterYear;
     const matchesRating = filterRating === 'All' || movie.rating >= parseFloat(filterRating);
@@ -47,6 +53,7 @@ function App() {
     return matchesYear && matchesRating && matchesGenre;
   });
 
+  {/**filters movies by filters AND sorting simultaneously*/}
   const filteredAndSortedMovies = filteredMovies.sort((a, b) => {
     if (sortRating) {
       return b.rating - a.rating;
@@ -55,19 +62,25 @@ function App() {
   });
 
 
+  
   const uniqueGenres = getUniqueGenres(movieData);
 
   return (
     <div className="App">
-
+      <div className="title-div">
       <h1 className="title">{appName}</h1>
+
+      </div>
+
 
       <div className="menu-bar">
 
+        {/**rating sorting logic */}
         <button className="dropdown" onClick={() => setSortRating(!sortRating)}>
           {sortRating ? "Unsort Rating (Alphabetical)" : "Sort by Rating (High to Low)"}
         </button>
 
+        {/**filter by year logic */}
         <div className="year-filter">
           <select className="dropdown" value={filterYear} onChange={(e) => setFilterYear(e.target.value)}>
           <option value="All">All Years</option>
@@ -75,8 +88,9 @@ function App() {
             <option key={year} value={year}>{year}</option>
           ))}
           </select>
-
         </div>
+
+        {/**filter by rating logic */}
         <div className="rating-filter">
           <select className="dropdown" value={filterRating} onChange={(e) => setFilterRating(e.target.value)}>
             <option value="All">All Ratings</option>
@@ -88,6 +102,7 @@ function App() {
           </select>
         </div>
 
+        {/**filter by genre logic */}
         <div>
           <select className="dropdown" value={filterGenre} onChange={(e) => setFilterGenre(e.target.value)}>
           {uniqueGenres.map((genre) => (
@@ -101,8 +116,9 @@ function App() {
       </div>
 
       <div className="display">
+
+        {/**movie menu display */}
         <div class="menu"> 
-        
           {filteredAndSortedMovies.map((item, index) => (
             <Movie 
               key={index}
@@ -120,14 +136,18 @@ function App() {
           ))}
         </div>
 
-
+        {/**cart display */}
         <div className="cart">
-          <h2>Liked Movies</h2>
+          <h2>ur favourites list</h2>
             <ul>
               {cart.map((movieName, index) => (
                 <li key={index}>{movieName}</li>
               ))}
             </ul>
+            <h4>Number of favourites: {cart.length}</h4>
+            <button className="remove-button" onClick={emptyCart}>Clear all favourites</button>
+
+
         </div>
 
       </div>
