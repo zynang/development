@@ -1,0 +1,114 @@
+[   
+    {
+      "name": "Barbie",
+      "description": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+      "year": 2023,
+      "rating": 6.9,
+      "genre": "Adventure, Comedy, Fantasy",
+      "image": "images/barbie.jpg"
+    },
+    {
+      "name": "Django Unchained",
+      "description": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
+      "year": 2012,
+      "rating": 8.5,
+      "genre": "Drama, Western",
+      "image": "images/django.jpg"
+    },
+    {
+      "name": "Forrest Gump",
+      "description": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+      "year": 1994,
+      "rating": 8.8,
+      "genre": "Drama, Romance",
+      "image": "images/forrest.jpg"
+    },
+    {
+      "name": "Gone Girl",
+      "description": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
+      "year": 2014,
+      "rating": 8.1,
+      "genre": "Drama, Mystery, Thriller",
+      "image": "images/gone-girl.jpg"
+    },
+    {
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "description": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+      "year": 2001,
+      "rating": 7.6,
+      "genre": "Adventure, Fantasy, Family",
+      "image": "images/harry-potter.jpg"
+    },
+    {
+      "name": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "year": 2010,
+      "rating": 8.8,
+      "genre": "Action, Adventure, Sci-Fi",
+      "image": "images/inception.jpg"
+    },
+    {
+      "name": "Ip Man",
+      "description": "During the Japanese invasion of China, a wealthy martial artist is forced to leave his home when his city is occupied. With little means of providing for themselves, Ip Man and the remaining members of the city must find a way to survive.",
+      "year": 2008,
+      "rating": 8,
+      "genre": "Action, Biography, Drama",
+      "image": "images/ip-man.jpg"
+    },
+    {
+      "name": "Love, Rosie",
+      "description": "Rosie and Alex have been best friends since they were 5, so they couldn't possibly be right for one another...or could they? When it comes to love, life and making the right choices, these two are their own worst enemies.",
+      "year": 2014,
+      "rating": 7.1,
+      "genre": "Comedy, Romance",
+      "image": "images/love-rosie.jpg"
+    },
+    {
+      "name": "Oppenheimer",
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+      "year": 2023,
+      "rating": 8.3,
+      "genre": "Biography, Drama, History",
+      "image": "images/oppenheimer.jpg"
+    },
+    {
+      "name": "Shutter Island",
+      "description": "Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.",
+      "year": 2010,
+      "rating": 8.2,
+      "genre": "Drama, Mystery, Thriller",
+      "image": "images/shutter-island.jpg"
+    },
+    {
+      "name": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "rating": 9,
+      "genre": "Action, Crime, Drama",
+      "image": "images/dark-knight.jpg"
+    },
+    {
+      "name": "The Grand Budapest Hotel",
+      "description": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.",
+      "year": 2014,
+      "rating": 8.1,
+      "genre": "Adventure, Comedy, Crime",
+      "image": "images/budapest.jpg"
+    },
+    {
+      "name": "The Truman Show",
+      "description": "An insurance salesman discovers his whole life is actually a reality TV show.",
+      "year": 1998,
+      "rating": 8.2,
+      "genre": "Comedy, Drama",
+      "image": "images/truman.jpg"
+    },
+    {
+      "name": "You Are The Apple Of My Eye",
+      "description": "A group of close friends who attend a private school all have a debilitating crush on the sunny star pupil, Shen Jiayi. The only member of the group who claims not to is Ke Jingteng, but he ends up loving her as well.",
+      "year": 2011,
+      "rating": 7.6,
+      "genre": "Comedy, Drama, Romance",
+      "image": "images/apple-of-my-eye.jpg"
+    }
+  ]
