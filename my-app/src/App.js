@@ -146,7 +146,7 @@ function App() {
                 <li key={index}>{movieName}</li>
               ))}
             </ul>
-            <h4>Number of favourites: {cart.length}</h4>
+            <h4>number of favourites: {cart.length}</h4>
             <button className="remove-button" onClick={emptyCart}>Clear all favourites</button>
 
 

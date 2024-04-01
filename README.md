@@ -1,4 +1,4 @@
-# development
+# your fav movies list README
 
 This is the link to the deployed website using Vercel: https://development-woad-five.vercel.app/
 
