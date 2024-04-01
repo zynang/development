@@ -72,7 +72,9 @@ function App() {
 
       </div>
 
+      <body>
 
+      
       <div className="menu-bar">
 
         {/**rating sorting logic */}
@@ -151,6 +153,8 @@ function App() {
         </div>
 
       </div>
+
+      </body>
 
       
     </div>

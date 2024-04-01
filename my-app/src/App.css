@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 .App {
   width: 100%;
   padding: 20px;
 
+}
+
+body{
+  font-family: "Nunito";
 }
 
 .display{
@@ -33,10 +40,12 @@
   border-radius: 4px;
   background-color: white;
   cursor: pointer;
+  font-family: "Nunito";
+  font-size: 14px;
 }
 
 .dropdown:hover {
-  background-color:lightgreen;
+  background-color:#B8DEB9;
 }
 
 .cart{
@@ -48,7 +57,7 @@
   width: auto;
   margin-top: 0px;
   border-style: none none none solid;
-  border-left: solid 1px grey;
+  border-left: solid 3px #B8DEB9;
 
 
 }
@@ -62,11 +71,11 @@
 
 .genre-bubble {
   padding: 5px 10px;
-  background-color: #F6d4e3; 
+  background-color: #B8DEB9; 
   border-radius: 10px; 
-  font-size: 12px;
+  font-size: 14px;
   white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 
@@ -93,7 +102,7 @@
   border-radius: 10px;
   background-color:pink;
   padding: 0px;
-  box-shadow: 3px 3px 3px lightgray;
+  box-shadow: 2px 2px darkmagenta;
 
 }
 
@@ -113,29 +122,31 @@
   border: 1.5px solid lightgray;
   border-radius: 4px;
   background-color: white;
+  font-family: "Nunito";
+  font-size: 14px;
 }
 
 .remove-button:hover{
   cursor: pointer;
-  background-color: #C0c5c5;
+  background-color: #B8DEB9;
 }
 
 li{
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 14px;
 }
 
 h3{
   margin: 5px;
-  font-family:'Helvetica';
+  /* font-family:'Helvetica'; */
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 p{
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
   margin: 2px;
 }
 
@@ -155,9 +166,9 @@ p{
 .desc{
   margin: 2px;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 15px;
 
 }
 
@@ -169,7 +180,7 @@ p{
 }
 
 h1{
-  font-family:Arial, Helvetica, sans-serif;
+  /* font-family:Arial, Helvetica, sans-serif; */
   font-size: 25px;
   color: black;
   text-align: left;
