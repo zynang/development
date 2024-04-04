@@ -64,7 +64,7 @@ function App() {
 
   
   const uniqueGenres = getUniqueGenres(movieData);
-
+    
   return (
     <div className="App">
       <div className="title-div">
