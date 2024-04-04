@@ -14,7 +14,11 @@ export default function Movie(props) {
                 ))}
             </div>
             <div className="button-div">
-            <button className="like-button" onClick={() => props.toggleLike(props.name)}>{props.isLiked ? '❤️' : '🤍'}</button>
+            <button className="like-button" onClick={() => props.toggleLike(props.name)}>
+                {props.isLiked ? '❤️' : '🤍'}
+                <span className="pop-up">{props.isLiked ? "Remove from Favorites" : "Add to Favorites"}</span>
+
+            </button>
             </div>
         </div>
     );
