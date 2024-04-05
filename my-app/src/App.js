@@ -117,6 +117,8 @@ function App() {
         
       </div>
 
+
+
       <div className="display">
 
         {/**movie menu display */}

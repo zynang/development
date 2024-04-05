@@ -92,6 +92,11 @@ body{
   
 }
 
+.card .image{
+  width: 250;
+  height: 250;
+}
+
 .like-button{
   position: absolute;
   top: 10px; 
